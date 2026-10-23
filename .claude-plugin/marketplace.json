@@ -7,8 +7,8 @@
   },
   "plugins": [
     {
-      "name": "antislop",
-      "source": "./plugins/antislop",
+      "name": "doole",
+      "source": "./plugins/doole",
       "description": "Lean antislop rules plus condensed superpowers and mattpocock process skills"
     }
   ]

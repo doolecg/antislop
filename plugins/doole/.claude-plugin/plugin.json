@@ -1,6 +1,6 @@
 {
-  "name": "antislop",
-  "version": "0.5.0",
+  "name": "doole",
+  "version": "0.6.0",
   "description": "Lean always-on antislop rules plus condensed process skills: 0-antislop, 1-qa, 2-plan, 3-build, 4-testing, 5-bug, 6-check, 7-review, 8-autoagents, 9-push",
   "author": {
     "name": "Doolecg",
