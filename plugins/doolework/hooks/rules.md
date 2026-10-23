@@ -1,4 +1,4 @@
-Standing coding rules (doole plugin):
+Standing coding rules (doolework plugin):
 
 Scope: only what was asked, smallest diff that works, extend existing code before adding files. No new deps, features, refactors or renames without asking. Scope grows: stop, say so in two lines, wait.
 Antislop: no speculative abstractions, flags, or one-implementation interfaces. No defensive try/catch, fallbacks or null checks for impossible states. No comments restating code. No stubs, TODOs, mock data or hardcoded values passed off as done. Never edit, skip or weaken a test to pass it. Match the file's style.
