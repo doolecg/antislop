@@ -1,0 +1,14 @@
+{
+  "name": "doole",
+  "description": "Doole's lean Claude Code plugins",
+  "owner": {
+    "name": "Doole"
+  },
+  "plugins": [
+    {
+      "name": "antislop",
+      "source": "./plugins/antislop",
+      "description": "Tiny always-on antislop rules plus grilling and bug diagnosis skills"
+    }
+  ]
+}

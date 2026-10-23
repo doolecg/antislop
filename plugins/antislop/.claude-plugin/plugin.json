@@ -1,0 +1,11 @@
+{
+  "name": "antislop",
+  "version": "0.1.0",
+  "description": "Tiny always-on antislop rules plus grilling and bug diagnosis skills",
+  "author": {
+    "name": "Doole"
+  },
+  "repository": "https://github.com/doolecg/antislop",
+  "license": "MIT",
+  "keywords": ["antislop", "rules", "grilling", "debugging"]
+}
