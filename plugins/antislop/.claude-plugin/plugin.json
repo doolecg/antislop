@@ -1,7 +1,7 @@
 {
   "name": "antislop",
-  "version": "0.1.0",
-  "description": "Tiny always-on antislop rules plus grilling and bug diagnosis skills",
+  "version": "0.2.0",
+  "description": "Lean always-on antislop rules plus condensed process skills: grilling, planning, tdd, diagnosing-bugs, verifying, reviewing, subagents, finishing",
   "author": {
     "name": "Doole"
   },
