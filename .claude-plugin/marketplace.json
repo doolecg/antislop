@@ -2,7 +2,8 @@
   "name": "doole",
   "description": "Doole's lean Claude Code plugins",
   "owner": {
-    "name": "Doole"
+    "name": "Doolecg",
+    "email": "doolecg@gmail.com"
   },
   "plugins": [
     {

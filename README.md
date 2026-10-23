@@ -5,6 +5,7 @@ A lean Claude Code plugin: always-on antislop rules (about 300 tokens per sessio
 | Piece | Loads | What it does |
 |---|---|---|
 | `hooks/rules.md` | Every session start, `/clear`, compaction | Scope, antislop, bug, verify and output rules |
+| `0-antislop` | On use | Slop filter for prose and UI: banned words, patterns and visual ornament |
 | `1-qa` | On use, or `/antislop:1-qa` | Round-by-round interview until nothing in a plan is assumed |
 | `2-plan` | On use | Write and execute a task-by-task plan with exact files, signatures and checks |
 | `3-testing` | On use | Red-green at agreed seams, one slice per cycle |
@@ -27,7 +28,7 @@ Restart Claude Code (or `/reload-plugins`). In T3 Code, restart the app so the C
 
 ## Check it works
 
-1. Fresh session, `/context`: the hook's text and eight small skills.
+1. Fresh session, `/context`: the hook's text and nine small skills.
 2. Ask "What are my standing coding rules?" and get them back.
 3. `/antislop:1-qa` on a small idea.
 
