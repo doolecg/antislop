@@ -1,5 +1,5 @@
 ---
-name: reviewing
+name: 6-review
 description: Review a change since a fixed point on two axes, standards and spec, and handle incoming review feedback. Use when asked to review a branch, PR or diff, or when review comments arrive.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: subagents
+name: 7-autoagents
 description: Delegate work to subagents. Use when 2+ independent tasks can run in parallel, or a plan's tasks should each get a fresh context.
 ---
 
@@ -18,6 +18,6 @@ IF STUCK: return BLOCKED (expected / got / tried / suspect / need); don't improv
 ```
 Put the standing rules in the brief: no scope creep, no weakening tests, no faking success.
 
-**Plan execution.** Treat tasks as a graph; dispatch the frontier (tasks whose prerequisites are done). When one finishes, verify it yourself (`verifying`: read the diff, run the check), review it (`reviewing`), then dispatch what it unblocked. Same approach failing twice: stop and rewrite the card, not a third try.
+**Plan execution.** Treat tasks as a graph; dispatch the frontier (tasks whose prerequisites are done). When one finishes, verify it yourself (`5-check`: read the diff, run the check), review it (`6-review`), then dispatch what it unblocked. Same approach failing twice: stop and rewrite the card, not a third try.
 
 **Reports back.** `DONE / CHANGED (file: what) / VERIFIED (command, result) / NOTES`, short. Integration is where multi-agent work breaks: after the last agent, run the full suite and the whole-change review yourself.

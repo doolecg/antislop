@@ -1,5 +1,5 @@
 ---
-name: verifying
+name: 5-check
 description: Gate before claiming anything is done, fixed, passing or complete, and before committing or opening a PR. Evidence first.
 ---
 

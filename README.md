@@ -5,16 +5,16 @@ A lean Claude Code plugin: always-on antislop rules (about 300 tokens per sessio
 | Piece | Loads | What it does |
 |---|---|---|
 | `hooks/rules.md` | Every session start, `/clear`, compaction | Scope, antislop, bug, verify and output rules |
-| `grilling` / `grill-me` | On use / only when typed | Round-by-round interview until nothing in a plan is assumed |
-| `planning` | On use | Write and execute a task-by-task plan with exact files, signatures and checks |
-| `tdd` | On use | Red-green at agreed seams, one slice per cycle |
-| `diagnosing-bugs` | On use | Feedback loop first, then reproduce, hypothesise, instrument, fix, clean up |
-| `verifying` | On use | No "done" without running the proving command this turn |
-| `reviewing` | On use | Two-axis review (standards, spec) and how to take review feedback |
-| `subagents` | On use | Task cards, frontier dispatch, verify every report |
-| `finishing` | On use | Close a branch: verify, merge or PR, clean up |
+| `1-qa` | On use, or `/antislop:1-qa` | Round-by-round interview until nothing in a plan is assumed |
+| `2-plan` | On use | Write and execute a task-by-task plan with exact files, signatures and checks |
+| `3-testing` | On use | Red-green at agreed seams, one slice per cycle |
+| `4-bug` | On use | Feedback loop first, then reproduce, hypothesise, instrument, fix, clean up |
+| `5-check` | On use | No "done" without running the proving command this turn |
+| `6-review` | On use | Two-axis review (standards, spec) and how to take review feedback |
+| `7-autoagents` | On use | Task cards, frontier dispatch, verify every report |
+| `8-push` | On use | Close a branch: verify, merge or PR, clean up |
 
-Only the descriptions sit in context until a skill is used.
+Skills are numbered in workflow order. Only the descriptions sit in context until one is used.
 
 ## Install
 
@@ -27,9 +27,9 @@ Restart Claude Code (or `/reload-plugins`). In T3 Code, restart the app so the C
 
 ## Check it works
 
-1. Fresh session, `/context`: the hook's text and nine small skills.
+1. Fresh session, `/context`: the hook's text and eight small skills.
 2. Ask "What are my standing coding rules?" and get them back.
-3. `/antislop:grill-me` on a small idea.
+3. `/antislop:1-qa` on a small idea.
 
 ## Editing
 

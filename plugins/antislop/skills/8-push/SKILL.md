@@ -1,5 +1,5 @@
 ---
-name: finishing
+name: 8-push
 description: Close out a development branch: verify, then merge locally, open a PR, or hand back. Use when work on a branch is complete.
 ---
 

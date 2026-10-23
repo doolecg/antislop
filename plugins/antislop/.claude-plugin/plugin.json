@@ -1,7 +1,7 @@
 {
   "name": "antislop",
-  "version": "0.2.0",
-  "description": "Lean always-on antislop rules plus condensed process skills: grilling, planning, tdd, diagnosing-bugs, verifying, reviewing, subagents, finishing",
+  "version": "0.3.0",
+  "description": "Lean always-on antislop rules plus condensed process skills: 1-qa, 2-plan, 3-testing, 4-bug, 5-check, 6-review, 7-autoagents, 8-push",
   "author": {
     "name": "Doole"
   },

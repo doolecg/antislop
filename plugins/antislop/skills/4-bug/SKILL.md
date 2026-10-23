@@ -1,5 +1,5 @@
 ---
-name: diagnosing-bugs
+name: 4-bug
 description: Root-cause loop for bugs, failing tests and performance regressions. Use when the user says "diagnose"/"debug", or reports something broken, throwing, failing or slow.
 ---
 
