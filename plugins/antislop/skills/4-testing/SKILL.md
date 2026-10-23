@@ -1,5 +1,5 @@
 ---
-name: 3-testing
+name: 4-testing
 description: Test-first implementation for features and bug fixes. Use when building or fixing anything with testable behaviour, or the user says TDD / red-green.
 ---
 

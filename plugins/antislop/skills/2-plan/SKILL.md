@@ -1,13 +1,17 @@
 ---
 name: 2-plan
-description: Write and execute an implementation plan for multi-step work. Use when a task spans several files or tasks, or the user asks for a plan.
+description: Write the spec and implementation plan for multi-step work. Use when a task spans several files or tasks, or the user asks for a plan.
 ---
 
-Settle the design first (use `1-qa` if anything is still assumed). Then write the plan, then execute it task by task.
+Settle the design first (use `1-qa` if anything is still assumed). Then write the plan. Building it is `3-build`.
 
-## Writing
+## Spec (top of the plan)
 
-Header: feature, goal, global constraints (test command, style rules, what is out of scope).
+Problem (from the user's view), solution (same view), numbered user stories ("as X I want Y so that Z"), implementation decisions (modules, interfaces, schema, contracts; no file paths or code, they date fast), testing decisions (which seams, prior art in the repo), out of scope. Use the repo's own vocabulary (GLOSSARY, ADRs if present).
+
+## Plan
+
+Global constraints: test command, style rules, what is out of scope.
 
 Each task:
 - Files: create / modify (with line ranges) / test, exact paths.
@@ -22,8 +26,8 @@ Each task:
 
 Sizing: a task fits one fresh context. Split by responsibility, not layer; follow the codebase's existing file patterns. Self-review the plan: every Consumes has a Produces, no step says "handle appropriately" or similar hand-waving.
 
-## Executing
+## Antislop check before hand-off
 
-Work tasks in order unless independent (then see `7-autoagents`). Per task: run the steps, compare every expected output to real output, and run `5-check` before marking done. If the code is wrong, use `4-bug`. If the plan is wrong (contradicts the code or spec), stop and say so; don't improvise around it. Keep a short ledger of deviations.
+Strike from the spec and plan: any module, flag, option, interface or abstraction with one caller and no story behind it; "future-proofing", "extensible", "configurable" without a named need; error handling for states that can't happen; any task that is only a refactor or tidy of code the stories don't touch; any step that says "handle", "appropriately", "as needed", "robust". Every remaining item must trace to a user story. Fewer tasks is better.
 
-Finish with a whole-change review (`6-review`), then `8-push`.
+Hand off: the plan goes to `3-build` (or `8-autoagents` for independent tasks).
